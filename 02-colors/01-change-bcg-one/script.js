@@ -9,8 +9,55 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function Background(color) {
+    let page = document.querySelector("body")
+    let red = document.querySelector("#red")
 
-    // your code here
+
+    red.addEventListener("click", change);
+
+    function change() {
+        page.style.backgroundColor = "red";
+    }
+
+
+})();
+(function Background(color) {
+    let page = document.querySelector("body")
+    let green = document.querySelector("#green")
+
+
+    green.addEventListener("click", change);
+
+    function change() {
+        page.style.backgroundColor = "green";
+    }
+
+
+})();
+(function Background(color) {
+    let page = document.querySelector("body")
+    let yellow = document.querySelector("#yellow")
+
+
+    yellow.addEventListener("click", change);
+
+    function change() {
+        page.style.backgroundColor = "yellow";
+    }
+
+
+})();
+(function Background(color) {
+    let page = document.querySelector("body")
+    let red = document.querySelector("#blue")
+
+
+    blue.addEventListener("click", change);
+
+    function change() {
+        page.style.backgroundColor = "blue";
+    }
+
 
 })();
