@@ -89,6 +89,15 @@
         },
     ];
 
-    // your code here
+        document.getElementById("run").addEventListener("click", () => {
 
-})();
+            const index = people.findIndex((person) => {
+                return (person.lastname === "Dupont" && person.firstname ==="Jean")
+            });
+
+            console.log(people[index].email);
+            alert(index);
+
+        });
+
+    })();
