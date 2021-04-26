@@ -10,7 +10,5 @@
 // You will have time to focus on it later.
 var myvar = 'Hello, World';
 (function() {
-
-    // your code here
 alert(myvar);
 })();

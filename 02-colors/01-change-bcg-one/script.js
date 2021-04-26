@@ -20,7 +20,6 @@
         page.style.backgroundColor = "red";
     }
 
-
 })();
 (function Background(color) {
     let page = document.querySelector("body")
