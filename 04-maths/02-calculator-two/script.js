@@ -12,7 +12,7 @@
 (function () {
     // to get the value of an input: document.getElementById("element-id").value
 
-    var performOperation = function (operator) {
+    let performOperation = function (operator) {
         // perform the operation
         let opOne = Number(document.getElementById("op-one").value);
         let opTwo = Number(document.getElementById("op-two").value);
@@ -45,6 +45,5 @@
             performOperation($btn.id);
         });
     });
-
 
 })();
