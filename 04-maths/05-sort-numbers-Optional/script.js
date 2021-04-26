@@ -15,7 +15,15 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+        const numberField = document.getElementById("numbers");
+
+        const sortedInput = numberField.value
+            .split(', ')
+            .sort((a,b) => a -b );
+
+        const newString = sortedInput.join(", ");
+
+        numberField.value=newString;
 
     });
 

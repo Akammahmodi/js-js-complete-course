@@ -10,9 +10,18 @@
 // You will have time to focus on it later.
 
 (function() {
+    let d = new Date();
+    let hours = d.getHours();
+    let minutes = d.getMinutes();
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
-    // your code here
+    if(hours > 17 ) {
+        document.getElementById('target').innerHTML = "Good evening";
+    }
+    else if(hours === 17 && minutes >= 30){
+        document.getElementById('target').innerHTML = "Good evening";
+    }
+    else{
+        document.getElementById('target').innerHTML = "Hello";
+    }
 
 })();
