@@ -18,13 +18,13 @@
     alert(`You live in ${city}`);
 
 
-    var resault = confirm ("You filled in: " + age + " years old, " + gender + ", from " + city + ". Is this correct?");
+    const result = confirm("You filled in: " + age + " years old, " + gender + ", from " + city + ". Is this correct?");
 
-    if (resault === true) {
+    if (result === true) {
         alert("It confirmed");
-    } else if (resault === false) {
+    } else if (result === false) {
         alert("Please give correct information");
 location.reload();
     }
 }
-())"You filled in: " + age + " years old, " + gender + ", from " + town + ". Is this correct?"
+());

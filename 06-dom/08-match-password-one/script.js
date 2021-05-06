@@ -11,6 +11,17 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () =>{
+
+        const passwordOneField = document.getElementById("pass-one");
+        const passwordTwoField = document.getElementById("pass-two");
+        const errorBorderColor = "red";
+
+        if(passwordOneField.value !== passwordTwoField.value){
+            passwordOneField.style.borderColor=errorBorderColor;
+            passwordTwoField.style.borderColor=errorBorderColor;
+        }
+
+    });
 
 })();

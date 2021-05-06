@@ -11,6 +11,19 @@
 
 (function() {
 
-    // your code here
+    const tableNode = document.createElement("table");
+    const tableRow = document.createElement("tr");
+    const table = target.appendChild(tableNode);
+
+    for(rows = 0; rows < 10; rows++){
+        let newRow = table.insertRow();
+
+
+        for(cell=0; cell < 10; cell++){
+            let newCell = newRow.insertCell();
+            let innerCell = (rows +1) * (cell +1)
+            newCell.appendChild(document.createTextNode(innerCell));
+        }
+    }
 
 })();

@@ -9,8 +9,10 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function(element) {
 
-    // your code here
+  for (element of document.getElementsByClassName("target")){
+    element.innerHTML="owned"
+  }
 
 })();

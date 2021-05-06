@@ -9,8 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+    const img = document.querySelector("img");
+    const goOn = img.src;
+    const hover = img.getAttribute("data-hover");
 
-    // your code here
+    img.onmouseover = function () {
+        img.src = hover;
+    }
+    img.onmouseout = function () {
+        img.src = goOn;
+
+    }
 
 })();
+
+//What have to be done:
+
+//const img
+//const start
+//const hover en get its attribute
+//img on mouse over
+//img on mouse out
